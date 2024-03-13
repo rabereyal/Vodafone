@@ -38,6 +38,7 @@
     </style>
     <script>
         function handleButtonClick(url) {
+            history.pushState({}, '', url);
             window.location.href = url; // Redirect to the given URL in the same tab
         }
     </script>
